@@ -1,0 +1,249 @@
+ 
+    <div *ngIf="loader" class="wholeDesign">
+        <div class="mainBody">
+            <span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            <div class="base">
+            </div>
+            <div class="face"></div>
+        </div>
+        <div class="longfazers">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+       
+    </div>
+
+    <span *ngIf="!loader">
+        <button class="btn fixedbutton" *ngIf="isShow" (click)="gotoTop()" placement="right"
+        ngbPopover="Top of page" 
+        triggers="mouseenter:mouseleave">
+            <span><i class="fa-solid fa-arrow-up"></i></span>
+        </button>
+    </span>
+    
+    <div class="fixedSocialDiv" *ngIf="!loader">        
+            <a href="md.mazher@mphasis.com" class="my-2 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/memazher/" class="my-2 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/md-mazher-a468b9227/" class="my-2 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/mdmazher01" class="my-2 text-reset">
+                <i class="fab fa-github"></i>   
+            </a>     
+    </div>
+    
+
+    
+    
+    <section class="introSection mt-2" id="home"  *ngIf="!loader">
+            <div class="intro-para-div" *ngFor="let i of bioList">
+                <div class="intro-para1 pt-4">
+                    <p>Hello, 👋. My name is</p>&nbsp;
+                    <p style="font-weight: 700;" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">{{i.firstName +" "+i.lastName}}.</p> 
+                </div>
+                <div class="intro-para2">
+                    {{i.intro[0]}}
+                </div>
+                <div class="intro-para2">
+                    {{i.intro[1]}}
+                </div>
+                <div class="button-div mt-3">
+                    <div>
+                        <button class="btn btn-outline-dark mt-3 mb-5" style="box-shadow:none;" (click)="toProject()">See My Work ></button>
+                        &nbsp;
+                        <a class="btn btn-outline-dark mt-3 mb-5" style="box-shadow:none;" href="https://drive.google.com/file/d/1JKU7rvecWwipkJ6hQByB3C3K4v6fJPq_/view?usp=sharing" download>Download Resume</a>
+                    </div>
+                    
+                </div> 
+                <!-- Display on small screen device -->
+                <div class="socialmediaDiv" data-aos="fade" data-aos-duration="1000">
+                    <a href="md.mazher@mphasis.com" class="text-reset me-3">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/memazher/" class="text-reset me-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/md-mazher-a468b9227/" class="text-reset me-3">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mdmazher01" class="text-reset me-3">
+                        <i class="fab fa-github"></i>
+                    </a>  
+
+                </div>
+            </div>     
+    </section>
+
+    <section class="experienceSection" id="experience" *ngIf="!loader">
+
+        <div class="container">
+            <div class="experienceHead mb-5">
+                <p class="experienceTag"  data-aos="fade-up" data-aos-duration="1000">Experience</p>
+            </div>
+            <div class="timeline">
+              <ul>
+                <li data-aos="fade" data-aos-duration="2500">
+                  <div class="timeline-content" >   
+                    <h3 class="date">Dec, 2021 - Present</h3>
+                    <h1>Associate Software Engineer</h1>
+                    <p>Mphasis Limited</p>
+                  </div>
+                </li>
+                <li data-aos="fade" data-aos-duration="2500">
+                  <div class="timeline-content" >
+                    <h3 class="date">Sep, 2020 - Dec, 2020</h3>
+                    <h1>Python Developer</h1>
+                    <p>FICE Education</p>
+                    <p>3 Month internship offered by FICE Education in
+                        collaboration with Intel. Where I provided python solution of
+                        real world problems</p>
+                  </div>
+                </li>
+                <li data-aos="fade" data-aos-duration="2500">
+                  <div class="timeline-content" >
+                    <h3 class="date">May, 2020 - July, 2020</h3>
+                    <h1>IOT Developer</h1>
+                    <p>Exposys Datalabs</p>
+                    <p>1 month internship, Where I developed IOT based solution of
+                        real world problems</p>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+    </section>
+
+    <section class="skillSection" id="skills" *ngIf="!loader">
+        <div class="card skill-div">
+            <div class="skill-div-head pt-5" data-aos="fade-up" data-aos-duration="1000">
+                <p class="skill-head-1">Skills</p>
+                <p class="skill-head-2">My technical level</p>
+            </div>
+            <div class="skillMenu mt-3 pt-2 pb-2" >
+
+                <div class="skillCard mx-3" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="card-top-section pt-2">
+                        
+                        <h5 class="card-title pt-4">Frontend</h5>
+                    </div>
+                    <div class="card-body mt-3" >
+                        <div class="column-1" >
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">HTML</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">CSS</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Javascript</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Angular</p>
+                        </div>
+                        <div class="column-2">
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Bootstrap</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">TailwindCSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillCard mx-3" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="card-top-section pt-2">
+                        <h5 class="card-title pt-4">Backend</h5>
+                    </div>
+                    <div class="card-body mt-3">
+                        <div class="column-1 mx-1">
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Java</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Springboot</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">MySQL</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Python</p>
+                        </div>
+                        <div class="column-2 mx-1">
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">Git & Github</p>
+                            <p class="skills-tag"><img src="assets/icons/badge-check.png" class="badge-icon ms-2 me-2">IOT</p> 
+                        </div>
+                    </div>
+                </div>
+            
+            </div> 
+        </div>
+    </section>
+
+
+
+    <section class="projectSection" id="projects" *ngIf="!loader">
+        <div class="card project-div">
+            <div class="project-head pt-5"  data-aos="fade-up" data-aos-duration="1000">
+                <p style="font-weight: 700;">My</p>
+                &nbsp;
+                <p style="font-weight: 300;">Projects</p>
+            </div>
+            <div class="latestProject mt-5">
+                    <div class="ratio ratio-16x9" data-aos="fade-right">
+                        <iframe src="https://www.youtube.com/embed/N3rcZ1wD__4" title="YouTube video" allowfullscreen class="frame"></iframe>
+                    </div>
+                    <div class="projectdescription px-3 py-3" data-aos="fade-left">
+                        <h5 class="card-title">E-Commerce Application</h5>
+                        <p class="card-text" style="font-weight: 400;">A complete e-commerce application where user can purchased product of their choice.&nbsp;<a style="cursor:pointer; color:black;" href="https://www.youtube.com/watch?v=N3rcZ1wD__4&t=1s"><i class="fa-solid fa-link"></i></a></p>
+                    </div>  
+                    <div class="projectdescriptiononsmallScreen px-3 py-3" data-aos="fade-left">
+                        <h5 class="card-title">E-Commerce Application</h5>
+                        <p class="card-text" style="font-weight: 400;">A complete e-commerce application where user can purchased product of their choice.&nbsp;<a style="cursor:pointer; color:black;" href="https://www.youtube.com/watch?v=N3rcZ1wD__4&t=1s"><i class="fa-solid fa-link"></i></a></p>
+                    </div>  
+            </div>
+            <div class="otherprojectHead mt-5"  data-aos="fade-up" data-aos-duration="1000">
+                <p style="font-weight: 700;">Other Noteworthy</p>
+                <p style="font-weight: 300;">Projects</p>
+            </div>
+        </div>
+        <div class="card otherProjectList mt-5 mb-5">
+                
+            <div class="card cardlist mx-2 mt-2" data-aos="fade-up" data-aos-duration="1500">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Face Recognition and Attendance System using Deep
+                    Learning</h5>
+                  <p class="card-text ms-3">A face recognition and attendance system developed using deep
+                    learning model and achieved detection accuracy of 98%
+                    <a style="cursor:pointer; color:black;" href="https://github.com/mdmazher01/Projects/tree/master/FaceRecognition%20%2B%20Attendance%20(deeplearning)/Face-Recognition"><i class="fa-solid fa-link"></i></a>   
+                </p>
+                  
+                </div>
+              </div>
+
+              <div class="card cardlist mx-2 mt-2" data-aos="fade-up" data-aos-duration="1500">
+               
+                <div class="card-body">
+                  <h5 class="card-title">Face Mask Detection using Machine Learning</h5>
+                  <p class="card-text ms-3">A face mask detection system using machine learning model which
+                    check whether a person have wear a mask or not with an detection
+                    accuracy of 95.6%
+                    <a style="cursor:pointer; color:black;" href="https://github.com/mdmazher01/Projects/tree/master/Facemask%20Detection"><i class="fa-solid fa-link"></i></a>
+                </p>
+                  
+                </div>
+              </div>
+
+              <div class="card cardlist mx-2 mt-2" data-aos="fade-up" data-aos-duration="1500">
+                
+                <div class="card-body">
+                  <h5 class="card-title">IOT Projects</h5>
+                  <p class="card-text ms-3">Smart Parking System, Autonomous Agriculture
+                    System, Burglar System, Smart Cold Storage System
+                    <a style="cursor:pointer; color:black;" href="https://github.com/mdmazher01/Projects"><i class="fa-solid fa-link"></i></a>
+                </p>
+                  
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+

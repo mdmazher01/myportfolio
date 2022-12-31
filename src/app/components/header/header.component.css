@@ -1,0 +1,50 @@
+.navbar-toggler{
+    box-shadow: none;
+}
+.md{
+  font-weight: 700 !important;
+}
+.mazher{
+  margin-left: 5px;
+  font-weight: 300 !important;
+  
+}
+
+li{
+  font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    li {
+     display: flex;
+     justify-content: center;
+     margin: 10px 0;
+     }
+   
+  }
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    
+    li{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+   
+   
+  
+  }
+  
+  @media screen and (max-width:575px){
+    
+    li{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+    
+  
+  
+  }
